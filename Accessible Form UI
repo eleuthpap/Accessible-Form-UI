@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="eng">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Accessible Form UI</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="/submit" method="post" > 
+                <label for="FullName">Full Name:</label></br>
+                <input type="text" id="FullName" name="FullName" required placeholder="Full Name"></input> <br><br>
+
+                <label for ="Email"> Email:</label></br>
+                <input type="email" id="email" name="email" required placeholder="Enter email"></input> <br><br>
+             
+
+                <label for ="Enter Password"> Enter Password:</label></br>
+                <div class="password-field">
+                    <input type="password" id ="password" name="password" required placeholder="XXXXXXXX"></input> 
+                    <i class="fa-solid fa-eye toggle-eye" id="toggleEye"></i>
+                </div><br>
+
+                <label for ="Confirm Password"> Confirm Password:</label></br>
+                <div class="password-field">
+                    <input type ="password" id ="confirmPassword" name="confirmPassword" required placeholder="XXXXXXXX"></input> 
+                    <i class="fa-solid fa-eye toggle-eye" id="toggleEyeConfirm"></i>
+                </div><br>
+
+                <input type="submit" value="Update profile"></input>
+            </form>
+     
+        </div>
+        <div class="field">
+            <div class="progress-bar">
+                <p>50%</p>
+            </div>  
+            <p> Profile Completeness</p>
+
+            <div class="complete-box">
+                <p style="text-decoration: line-through; color: #5b5e64;"> Create Account</p>
+                <p style="text-decoration: line-through; color: #5b5e64;">  Update roadmap Progress</p>
+                <p style="text-decoration: line-through; color: #5b5e64;"> Set Up Public Profile</p>
+                <p> Complete Your First Project</p>
+                <p> Invite Your Friends</p>
+
+            </div>
+    
+
+
+        </div>
+
+
+    </div>
+</body>
